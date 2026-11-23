@@ -145,10 +145,12 @@ public class Program {
             } else if (opc == 6) {
                 System.out.println("==FOLHA SALARIAL===");
                 for (Employee employee : service.getEmployees()) {
-                    System.out.println(employee.getName()+":     "+ employee.getBaseSalary());
+                    System.out.printf("%s: R$ %.2f%n",
+                            employee.getName(),
+                            employee.getBaseSalary());
                 }
                 System.out.println("-".repeat(25));
-                System.out.println("TOTAL: "+service.calculatePayroll());
+                System.out.printf("TOTAL: R$ %.2f%n", service.calculatePayroll());
 
             } else if (opc == 0) {
                 break;
