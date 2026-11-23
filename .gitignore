@@ -1,0 +1,14 @@
+# Java
+*.class
+*.log
+*.jar
+*.war
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Compilação
+out/
+target/
+build/
